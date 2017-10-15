@@ -1,0 +1,158 @@
+
+
+
+
+ /* Sticky footer styles
+ *       -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      				}
+
+.container-fluid .credit {
+      margin-top:20px; 
+      }
+#wrap > .container-fluid {
+        padding-top: 60px;
+      }
+
+
+.chat {
+
+min-height: 260px;
+max-height: 260px;
+overflow-y: auto;
+overflow-x:hidden;
+}
+.static {
+margin-top:10px;
+
+}
+
+
+.chat {
+
+background-color: #dceaf4;
+
+border:1px solid #dceaf4;
+border-radius: 4px;
+}
+
+
+
+.chat p
+{
+
+
+margin: 10px;
+
+}
+
+
+
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+/*Select box */
+
+.style-select
+{
+
+background-color: #dceaf4;
+border-radius:0;
+border:1px  solid#dceaf4;
+line-height:2;
+max-height:260px;
+min-height:260px;
+
+
+
+
+}
+
+.box
+{
+
+top:50%;
+right:50%;
+position:fixed;
+ background-color: #dceaf4;
+ display: none;
+width:380px;
+height:200px;
+
+
+z-index:102;
+
+}
+
+.box .close
+{
+margin:2px;
+text-align:right;
+
+
+}
+
+
+
+.overlay
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+ background:#000000; 
+   opacity: .15;
+   filter: alpha(opacity=15);
+   -moz-opacity: .15;
+   z-index: 101;
+   display: none;
+}

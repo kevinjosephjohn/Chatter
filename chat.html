@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Scripts -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="assets/scripts/jscolor/jscolor.js"></script>
+  <script src="assets/scripts/smileys/jquery.cssemoticons.min.js"></script>
+  <script src="assets/scripts/bootstrap.js"></script>
+  <script src="assets/scripts/scripts.js"></script>
+  <!-- End of Scripts -->
+  <!-- Stylesheets -->
+  <link href="/assets/stylesheets/jquery.cssemoticons.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/assets/stylesheets/styles.css"  rel="stylesheet" type="text/css" />
+  <link href="/assets/stylesheets/bootstrap-responsive.css"  rel="stylesheet" type="text/css" />
+  <link href="/assets/stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+  <!-- End of Stylesheets -->
+</head>
+<body>
+  <div id="wrap">
+    <div class="navbar  navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">Chatter</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="room"> <h1>Lobby</h1></div>
+      <div class="row-fluid">
+        <div class="span8">
+          <center> <span class="label label-info">Conversation</span>
+          </center>
+          <br>
+          <div class="chat">
+            <div id="conversation"></div>
+          </div>
+        </div>
+        <div class="span2">
+          <center>
+           <span class="label label-info">Users</span>
+         </center>
+         <br>
+         <select id="users" multiple="multiple" class="style-select" ></select>
+       </div>
+       <div class="span2">
+         <center>
+           <span class="label label-info">Rooms</span>
+         </center>
+         <br>
+         <select id="rooms" multiple="multiple" class="style-select"></select>
+       </div>
+     </div>
+     <div class="static">
+      <div class="row-fluid">
+        <div class="span12">
+          <textarea class="field span10" rows="5"  id="data"  ></textarea>
+          <button type="button" class="btn btn-success" id="datasend" />Send
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span11">
+        <a class="btn btn-info" >Font Color</a>
+        <input type="text" class='color input-mini'  id='color' style="margin-top:10px;">
+        <br><a class="btn btn-info" href="/smileys" target="_blank">Supported Smileys</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="push"></div>
+</div>
+<div id="footer">
+  <div class="container-fluid">
+    <p class="muted credit">Author: <a href="http://kevinjo.hn">Kevin John</a></p>
+  </div>
+</div>
+</body>
+</html>
